@@ -5,8 +5,8 @@ project "glfw"
 	language "C"
 
 	debugdir (outputDir)
-    targetdir (outputDir)
-    objdir (intermediateDir .. "/%{prj.name}")
+    	targetdir (outputDir)
+    	objdir (intermediateDir .. "/%{prj.name}")
 
 	files
 	{
