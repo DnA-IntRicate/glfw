@@ -5,8 +5,8 @@ project "glfw"
 	language "C"
 
 	debugdir (outputDir)
-    	targetdir (outputDir)
-    	objdir (intermediateDir .. "/%{prj.name}")
+	targetdir (outputDir)
+	objdir (intermediateDir .. "/%{prj.name}")
 
 	files
 	{
@@ -104,7 +104,7 @@ project "glfw"
 			"_GLFW_COCOA"
 		}
 
-	filter "system:not windows and linux and macosx"
+	filter "system:not windows or linux or macosx"
 		systemversion "latest"
 		files
 		{
