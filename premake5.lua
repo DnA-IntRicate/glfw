@@ -60,9 +60,7 @@ project "glfw"
 		}
 
 	filter "system:linux"
-		pic "On"
 		systemversion "latest"
-		staticruntime "On"
 		files
 		{
 			"src/x11_init.c",
