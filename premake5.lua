@@ -1,8 +1,9 @@
 -- OUT_DIR and INT_DIR must be defined in the top-most premake file before including this file
 
 project "glfw"
-    kind "SharedLib"
+    kind "StaticLib"
     language "C"
+    warnings "Off"
 
     debugdir (OUT_DIR)
     targetdir (OUT_DIR)
@@ -55,7 +56,6 @@ project "glfw"
 
         defines
         {
-            "_GLFW_BUILD_DLL",
             "_GLFW_WIN32",
             "_CRT_SECURE_NO_WARNINGS"
         }
